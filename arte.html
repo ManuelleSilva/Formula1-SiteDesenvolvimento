@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apaixonados por velocidade</title>
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-hover: #fc0b0b;
+            --cor-primaria: #ffffff;
+        }
+
+        .dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dp-menu ul {
+            background-color: var(--cor-fundo);
+        }
+
+        .dp-menu ul li {
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover {
+            background-color: var(--cor-hover);
+        }
+
+        .dp-menu ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul {
+            display: block;
+        }
+
+        .dp-menu ul ul {
+            width: 150px
+        }
+
+        .dp-menu ul ul li a {
+            display: block;
+        }
+
+        /* estili9zação do card*/
+        .card {
+            width: 380px;
+            height: 308px;
+            border-radius: 20px;
+            padding-left: 0px;
+            padding-bottom: 53%;
+        }
+
+        .card__content {
+            background: var(--cor-fundo);
+            border-radius: 17px;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        /* grades de conteiner*/
+        .grid-container {
+            padding-left: 2%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Define 3 colunas */
+            grid-template-rows: repeat(4, 1fr);
+            /* Define 3 colunas */
+            gap: 3%;
+            /* Espaço entre os cards */
+        }
+
+        /* estilizando os titulos*/
+        .titulopagina {
+            text-align: center;
+            font-size: 500%;
+            color: var(--cor-hover);
+        }
+
+        .subtitulo {
+            text-align: center;
+            font-size: 200%;
+            color: var(--cor-hover);
+        }
+
+        .subsubtitulo{
+            text-align: center;
+            font-size: 160%;
+        }
+    </style>
+</head>
+
+<body style="background-color:black;"></body>
+<header id="cabecalho">
+    <img src="f (1).png" height="85" width="250">
+</header>
+
+<nav class="dp-menu">
+    <ul>
+        <li><a href="Principal.html" target="main">Home</a></li>
+        <li><a href="Circuitos.html" target="main">Circuitos</a>
+            <ul>
+                <li><a href="Circuitos.html" target="main">Circuitos</a></li>
+                <li><a href="rua.html" target="main">Circuitos de 2023</a></li>
+            </ul>
+        </li>
+        <li><a href="Equipes.html" target="main">Equipes</a></li>
+        <li><a href="Pilotos.html" target="main">Pilotos</a>
+            <ul>
+                <li><a href="pilotos.html" target="main">pilotos</a></li>
+                <li><a href="Campeoes.html" target="main">Campeões de F1</a></li>
+            </ul>
+        </li>
+        <li><a href="arte.html" target="main">Arte & F1</a></li>
+        <li><a href="merchan.html" target="main">Filmes e séries</a></li>
+        <li><a href="moda.html" target="main">USE F1</a></li>
+    </ul>
+</nav>
+<section id="conteudo" style="color: #ffffff;">
+    <h1 class="titulopagina">Sua arte brilha e corre com a gente</h1>
+    <h2 class="subtitulo">Mostre-nos a arte que corre pelas suas veias</h2>
+    <h3 class="subsubtitulo">Nos marque @F1</h3>
+    <div class="grid-container">
+
+        <div class="card">
+            <div class="card__content">
+                <img src="fanart1.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="fanart2.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="fanaret3.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="2022 Formula 1 Collection.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Ayrton Senna Fanart.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Daniel Ricciardo Mclaren F1 Fanart.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Placa Decorativa Quadro Ayrton Senna.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Lando Norris Fanart.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Monza 2021.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Max & Sergio.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Mercedes Petronas Formula 1 Print.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Scuderia Ferrari.jpg" width="100%">
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card__content">
+                <img src="Michael Schumacher fanart.jpg" width="100%">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+</body>
+
+</html>

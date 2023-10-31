@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apaixonados por velocidade</title>
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-hover: #fc0b0b;
+            --cor-primaria: #ffffff;
+        }
+
+        .dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dp-menu ul {
+            background-color: var(--cor-fundo);
+        }
+
+        .dp-menu ul li {
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover {
+            background-color: var(--cor-hover);
+        }
+
+        .dp-menu ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul {
+            display: block;
+        }
+
+        .dp-menu ul ul {
+            width: 150px
+        }
+
+        .dp-menu ul ul li a {
+            display: block;
+        }
+
+
+        /* estilização do car*/
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 120ms;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 0.5em;
+            padding-bottom: 3.4em;
+        }
+
+        .card::after {
+            content: "Add to Cart";
+            padding-top: 1.25em;
+            padding-left: 1.25em;
+            position: absolute;
+            left: 0;
+            bottom: -60px;
+            background: #00AC7C;
+            color: #fff;
+            height: 2.5em;
+            width: 90%;
+            transition: all 80ms;
+            font-weight: 600;
+            text-transform: uppercase;
+            opacity: 0;
+        }
+
+        .card .title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+            position: absolute;
+            left: 0.625em;
+            bottom: 1.875em;
+            font-weight: 400;
+            color: #000;
+        }
+
+        .card .price {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 0.9em;
+            position: absolute;
+            left: 0.625em;
+            bottom: 0.625em;
+            color: #000;
+        }
+
+
+        .text {
+            max-width: 55px;
+        }
+
+        .image {
+            background: rgb(241, 241, 241);
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .grid-container {
+            padding-left: 4%;
+            padding-right: 4%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* Define 3 colunas */
+            gap: 4%;
+            /* Espaço entre os cards */
+        }
+    </style>
+</head>
+
+<body style="background-color:black;"></body>
+<header id="cabecalho">
+    <img src="f (1).png" height="85" width="250">
+</header>
+
+<nav class="dp-menu">
+    <ul>
+        <li><a href="Principal.html" target="main">Home</a></li>
+        <li><a href="Circuitos.html" target="main">Circuitos</a>
+            <ul>
+                <li><a href="Circuitos.html" target="main">Circuitos</a></li>
+                <li><a href="rua.html" target="main">Circuitos de 2023</a></li>
+            </ul>
+        </li>
+        <li><a href="Equipes.html" target="main">Equipes</a></li>
+        <li><a href="Pilotos.html" target="main">Pilotos</a>
+            <ul>
+                <li><a href="pilotos.html" target="main">pilotos</a></li>
+                <li><a href="Campeoes.html" target="main">Campeões de F1</a></li>
+            </ul>
+        </li>
+        <li><a href="arte.html" target="main">Arte & F1</a></li>
+        <li><a href="merchan.html" target="main">Filmes e séries</a></li>
+        <li><a href="moda.html" target="main">USE F1</a></li>
+    </ul>
+</nav>
+<section id="conteudo" style="color: #ffffff;">
+
+    <div class="grid-container">
+
+        <div class="card">
+            <div class="image"><img src="moletom pole.jpeg" width="100%"></div>
+            <span class="title">Moletom Pole Positions</span>
+            <span class="price">$279</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="camisetaF1.jpeg" width="100%"></div>
+            <span class="title">Camiseta F1</span>
+            <span class="price">$119</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="CamisetaLeclerck.jpeg" width="100%"></div>
+            <span class="title">Camiseta Leclerc</span>
+            <span class="price">$149</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="camisetaCarlosSainz.jpeg" width="100%"></div>
+            <span class="title">Camiseta Sainz</span>
+            <span class="price">$149</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="CamisetaNorris.jpeg" width="100%"></div>
+            <span class="title">Camiseta Norris</span>
+            <span class="price">$149</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="camisetaRiccardo.jpeg" width="100%"></div>
+            <span class="title">Camiseta Riccardo</span>
+            <span class="price">$149</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="copoF1.jpeg" width="100%"></div>
+            <span class="title">Copo F1</span>
+            <span class="price">$85</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="chaverioF1.jpeg" width="100%"></div>
+            <span class="title">Chaveiro F1</span>
+            <span class="price">$49</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="Chaveirospistas.jpeg" width="100%"></div>
+            <span class="title">Chavveiro grand Prix Circuit</span>
+            <span class="price">$49</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="jaquetaRedBull.jpeg" width="100%"></div>
+            <span class="title">Camiseta leclerc</span>
+            <span class="price">$319</span>
+        </div>
+
+        <div class="card">
+            <div class="image"><img src="JaquetaFerrari.jpeg" width="100%"></div>
+            <span class="title">Camiseta leclerc</span>
+            <span class="price">$319</span>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

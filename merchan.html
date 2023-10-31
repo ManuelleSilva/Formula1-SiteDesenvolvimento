@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apaixonados por velocidade</title>
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-hover: #fc0b0b;
+            --cor-primaria: #ffffff;
+        }
+
+        .dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dp-menu ul {
+            background-color: var(--cor-fundo);
+        }
+
+        .dp-menu ul li {
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover {
+            background-color: var(--cor-hover);
+        }
+
+        .dp-menu ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul {
+            display: block;
+        }
+
+        .dp-menu ul ul {
+            width: 150px
+        }
+
+        .dp-menu ul ul li a {
+            display: block;
+        }
+
+
+
+        .card {
+            width: 190px;
+            height: 254px;
+            border-radius: 30px;
+            background: var(--cor-fundo);
+        }
+
+        .grid-container {
+            padding-left: 4%;
+            padding-right: 4%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Define 3 colunas */
+            gap: 4%;
+            /* Espaço entre os cards */
+        }
+        
+        .Para{
+            font-size: 130%;
+        }
+
+        .subtitulo{
+            font-size: 160%;
+        }
+
+        .titulo{
+            font-size: 300%;
+            text-align: center;
+        }
+
+        .titulo2{
+            font-size: 200%;
+            color: var(--cor-hover);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:black;"></body>
+<header id="cabecalho">
+    <img src="f (1).png" height="85" width="250">
+</header>
+
+<nav class="dp-menu">
+    <ul>
+        <li><a href="Principal.html" target="main">Home</a></li>
+        <li><a href="Circuitos.html" target="main">Circuitos</a>
+            <ul>
+                <li><a href="Circuitos.html" target="main">Circuitos</a></li>
+                <li><a href="rua.html" target="main">Circuitos de 2023</a></li>
+            </ul>
+        </li>
+        <li><a href="Equipes.html" target="main">Equipes</a></li>
+        <li><a href="Pilotos.html" target="main">Pilotos</a>
+            <ul>
+                <li><a href="pilotos.html" target="main">pilotos</a></li>
+                <li><a href="Campeoes.html" target="main">Campeões de F1</a></li>
+            </ul>
+        </li>
+        <li><a href="arte.html" target="main">Arte & F1</a></li>
+        <li><a href="merchan.html" target="main">Filmes e séries</a></li>
+        <li><a href="moda.html" target="main">USE F1</a></li>
+    </ul>
+</nav>
+<section id="conteudo" style="color: #ffffff;">
+    <H1 class="titulo">Filmes, Séries e documentários</H1>
+    <h2 class="titulo2">Fórmula 1</h2>
+    <h2 class="titulo2">Ta nas telas, ta no nosso sangue</h2>
+    <div class="grid-container">
+        <div class="filme">
+            <div class="card">
+                <img src="SennaFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">Senna, o brasileiro, o herói, o campeão</h4>
+            <p class="Para">O documentário revela a história do herói brasileiro que mostrou o seu potencial no ano de 1984 durante o GP
+            de Mônaco. Ayrton Senna largou na 13ª posição e foi ultrapassando os outros pilotos chegando ao pódio pela
+            primeira vez. Anos depois, se tornou tricampeão do mundo e foi motivo de orgulho para o Brasil inteiro.
+
+            Porém, em 1994, perdeu a vida no GP de San Marino. A produção mostra a carreira e imagens inéditas em
+            abundância, as quais refletem 10 anos inesquecíveis que terminaram de forma comovente e chocante. O campeão
+            deixou as pistas ainda jovem, mas se tornou um mito e jamais será esquecido.</p>
+        </div>
+        <div class="filme">
+            <div class="card"><img src="WilliansFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">Williams</h4>
+            <p class="Para">Aqui você vai descobrir informações relevantes sobre a empresa da família Williams. O documentário mostra
+            imagens e arquivos que revelam a história do fundador da equipe, Frank Williams, sua esposa Virgínia e
+            Claire,
+            filha do casal. Todos desempenharam papel importante para o sucesso, conforme entrevistas realizadas com
+            Patrick
+            Head e Nigel Mansell.
+
+            A produção foi executada com o auxílio da equipe da Williams e registra momentos desconhecidos pela
+            sociedade.
+            Não visa apenas mostrar a glória da empresa e sim as dificuldades que foram enfrentadas e superadas pelos
+            seus
+            integrantes. Durante o longa é relembrada a história de Senna, que impactou de forma devastadora a sede em
+            Grove.</p>
+        </div>
+        <div class="filme">
+            <div class="card">
+                <img src="FittipaldiFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">O Fabuloso Fittipaldi</h4>
+            <p class="Para">O Fabuloso Fittipaldi conta a história do primeiro campeão brasileiro a vencer o mundial de Fórmula: Emerson
+            Fittipaldi. Portanto, é bastante atrativo para os fãs do automobilismo que gostam de assistir a
+            documentários e
+            conhecer detalhes sobre a vida dos campeões. Nessa produção é possível visualizar o piloto como marido, pai
+            e filho, formando um retrato da personalidade.</p>
+        </div>
+        <div class="filme">
+            <div class="card">
+                <img src="ABCFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">ABC da Fórmula 1</h4>
+            <p class="Para">Existem muitas personalidades, regras, jargões, e histórias sobre a Fórmula 1. Nessa série, você vai
+            encontrar
+            todas as respostas para as suas perguntas logo na primeira temporada. Ela oferece uma visão ampliada dos
+            bastidores do campeonato mundial que aconteceu em 2018 em 10 partes, abordando a vida dos chefes de equipe,
+            pilotos, proprietários, profissionais de gerenciamento e diretores.</p>
+        </div>
+
+
+        <div class="filme">
+            <div class="card">
+                <img src="FangioFilme.webp" width="100%">
+            </div><br>
+            <h4 class="subtitulo">Fangio, o rei das pistas</h4>
+            <p class="Para">O documentário relata a história do grande campeão argentino Juan Manuel Fangio, que conquistou 5 títulos
+            mundiais nos anos 1950. Tal recorde só foi batido algumas décadas depois, com Michael Schumacher.
+
+            Junto a Lewis Hamilton e Michael Schumacher, Fangio é visto como o maior piloto da história da Fórmula 1. Ele
+            era considerado por Ayrton Senna como o melhor de todos os tempos e por Lewis Hamilton foi chamado de Padrinho
+            da Fórmula 1.</p>
+        </div>
+        <div class="filme">
+            <div class="card">
+                <img src="GrandPrixFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">Grand Prix 1966</h4>
+
+            <p class="Para">O Grand Prix foi vencedor do Oscar que entrelaçou histórias de amor com sequências de ação em uma temporada
+            fictícia. Esse foi um sucesso de John Frankenheimer, filmado nas pistas de Fórmula 1, durante os finais de
+            semana. O filme retrata a era de ouro do esporte automobilístico e suas personalidades reais, de modo que é um
+            clássico imperdível.</p>
+
+
+        </div>
+        <div class="filme">
+            <div class="card">
+                <img src="McLarenFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">McLaren</h4>
+            <p class="Para">Esse documentário conta a história de Bruce McLaren com imagens que são comparadas à filmagem original e
+            entrevistas concedidas por pessoas que conheciam o piloto. É uma obra impressionante que mostra a lealdade e
+            dedicação do campeão que levou inspiração a todos que estavam ao seu redor. O começo mostra a jornada comovente
+            do fundador pioneiro.</p>
+        </div>
+        <div class="filme">
+            <div class="card">
+                <img src="LifeOnTheLimitFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">Life on the Limit</h4>
+            <p class="Para">O documentário Life on the Limit traz diversas entrevistas realizadas com as celebridades do automobilismo, por
+            exemplo, Lewis Hamilton e John Surtees. As estrelas expressam as suas opiniões sobre os perigos vivenciados, que
+            continuam presentes no esporte automobilístico. Ao longo do tempo, muitas mudanças foram realizadas para
+            aumentar a segurança dos pilotos.
+
+            Com arquivos e imagens raras, o produtor mostra Fittipaldi, Senna e outros nomes que obtiveram destaque. Quer
+            saber mais sobre a vida dos campeões que participaram das corridas mundiais? Essa é a oportunidade perfeita para
+            conhecer os bastidores, os desentendimentos e as competições que iam além das cenas transmitidas na TV.</p>
+        </div>
+        <div class="filme">
+            <div class="card">
+                <img src="RushFilme.jpg" width="100%">
+            </div><br>
+            <h4 class="subtitulo">Rush</h4>
+            <p class="Para">Rush é a obra cinematográfica criada para os fãs de Fórmula 1 por Ron Howard, que mostra a temporada de 1976. O
+            produtor revela a batalha travada entre Niki Lauda e James Hunt pelo título. O filme foi estrelado por Daniel
+            Bruhl e Chris Hemsworth com o requinte de Hollywood e gera fascínio aos expectadores que são amantes da
+            velocidade.
+
+            Agora você já conhece os melhores documentários e filmes de Fórmula 1 que estão à sua disposição e são as
+            tendências do mercado. Eles são excelentes opções de lazer durante a quarentena, assim como os documentários
+            Weekend of a Champion e Ferrari: Race to Immortality, que revelam tragédias e triunfos, e o filme Crash and
+            Burn, que retrata o piloto Tommy Byrne, da Irlanda.</p>
+        </div>
+
+    </div>
+    </div>
+</section>
+</body>
+
+</html>

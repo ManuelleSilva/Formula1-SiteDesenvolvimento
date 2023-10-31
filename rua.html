@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apaixonados por velocidade</title>
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-hover: #fc0b0b;
+            --cor-primaria: #ffffff;
+            --titulosdiferentes: #DAA520;
+        }
+
+        .dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dp-menu ul {
+            background-color: var(--cor-fundo);
+        }
+
+        .dp-menu ul li {
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover {
+            background-color: var(--cor-hover);
+        }
+
+        .dp-menu ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul {
+            display: block;
+        }
+
+        .dp-menu ul ul {
+            width: 150px
+        }
+
+        .dp-menu ul ul li a {
+            display: block;
+        }
+
+
+        /* decoração dos cards*/
+        .card {
+            width: 190px;
+            background: white;
+            padding: .4em;
+            border-radius: 6px;
+        }
+
+        .card-image {
+            background-color: rgb(236, 236, 236);
+            width: 100%;
+            height: 130px;
+            border-radius: 6px 6px 0 0;
+        }
+
+        .card-image:hover {
+            transform: scale(0.98);
+        }
+
+        .category {
+            text-transform: uppercase;
+            font-size: 0.7em;
+            font-weight: 600;
+            color: rgb(63, 121, 230);
+            padding: 10px 7px 0;
+        }
+
+        .category:hover {
+            cursor: pointer;
+        }
+
+        .heading {
+            font-weight: 600;
+            color: rgb(88, 87, 87);
+            padding: 7px;
+        }
+
+        .heading:hover {
+            cursor: pointer;
+        }
+
+        .author {
+            color: gray;
+            font-weight: 400;
+            font-size: 11px;
+            padding-top: 20px;
+        }
+
+        .name {
+            font-weight: 600;
+        }
+
+        .name:hover {
+            cursor: pointer;
+        }
+
+        .titulocard{
+            text-align: left;
+            color: var(--titulosdiferentes);
+        }
+        /* grades de conteiner*/
+        .grid-container {
+            padding-left: 2%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* Define 3 colunas */
+            grid-template-rows: repeat(4, 1fr);
+            /* Define 3 colunas */
+            gap: 4%;
+            /* Espaço entre os cards */
+        }
+    </style>
+</head>
+
+<body style="background-color:black;"></body>
+<header id="cabecalho">
+    <img src="f (1).png" height="85" width="250">
+</header>
+
+<nav class="dp-menu">
+    <ul>
+        <li><a href="Principal.html" target="main">Home</a></li>
+        <li><a href="Circuitos.html" target="main">Circuitos</a>
+            <ul>
+                <li><a href="Circuitos.html" target="main">Circuitos</a></li>
+                <li><a href="rua.html" target="main">Circuitos de 2023</a></li>
+            </ul>
+        </li>
+        <li><a href="Equipes.html" target="main">Equipes</a></li>
+        <li><a href="Pilotos.html" target="main">Pilotos</a>
+            <ul>
+                <li><a href="pilotos.html" target="main">pilotos</a></li>
+                <li><a href="Campeoes.html" target="main">Campeões de F1</a></li>
+            </ul>
+        </li>
+        <li><a href="arte.html" target="main">Arte & F1</a></li>
+        <li><a href="merchan.html" target="main">Filmes e séries</a></li>
+        <li><a href="moda.html" target="main">USE F1</a></li>
+    </ul>
+</nav>
+<section id="conteudo" style="color: #ffffff;">
+
+    <h1>Circuitos de 2023</h1>
+    <div class="grid-container">
+        <div>
+            <h3 class="titulocard">Bahrain International Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="circuitoBahrain.jpg" width="100%"></div>
+                <div class="category"> 1° etapa </div>
+                <div class="heading"> FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2004
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                            Pedro de La Rosa (2005) 1:31.447</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Lewis Hamilton 5</span><br>3-5 de mar</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Jeddah Corniche Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="Jeddah Street Circuit.jpg" width="100%"></div>
+                <div class="category"> 2° etapa </div>
+                <div class="heading"> FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2021
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                            1:30.734 Lewis Hamilton (2021)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                            Hamilton, Perez, Verstappen </span><br>17-19 de mar</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Albert Park Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="Albert Park Circuit.jpg" width="100%"></div>
+                <div class="category"> 3° etapa </div>
+                <div class="heading"> FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1996
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:20.235 Sergio Perez(2023)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 4</span><br>31-2 de abr</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Baku City Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="azerbaijão.jpg" width="100%"></div>
+                <div class="category"> 4° etapa </div>
+                <div class="heading"> FORMULA 1 AZERBAIJAN GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2016
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:43.009 Charles Leclerc (2019)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Rosberg, Bottas, Verstappen, Hamilton, Perez, Verstappen 1</span><br>28-30 de abr</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Miami International Autodrome</h3>
+            <div class="card">
+                <div class="card-image"><img src="Miami.jpg" width="100%"></div>
+                <div class="category"> 5° etapa </div>
+                <div class="heading"> FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2022
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:31.361 Max Verstappen (2022)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Max Verstappen 1</span><br>5-7 de mai</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Autodromo Enzo e Dino Ferrari</h3>
+            <div class="card">
+                <div class="card-image"><img src="Autodromo Enzo e Dino Ferrari.jpg" width="100%"></div>
+                <div class="category"> 6° etapa </div>
+                <div class="heading"> FORMULA 1 ROLEX GRAN PREMIO DELL'EMILIA ROMAGNA 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1980
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:15.484 Lewis Hamilton (2020)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 7</span><br>19-21 de mai</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Circuit de Monaco Automobile Club de Monaco</h3>
+            <div class="card">
+                <div class="card-image"><img src="Circuit de Monaco.jpg" width="100%"></div>
+                <div class="category"> 7° etapa </div>
+                <div class="heading"> FORMULA 1 GRAND PRIX DE MONACO 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1950
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:12.909 Lewis Hamilton (2021)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Ayrton Senna 6</span><br>26-28 de mai</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Circuit di Catalunya Real Automobil Club de Catalunya (Montemelo)</h3>
+            <div class="card">
+                <div class="card-image"><img src="Circuit de Barcelona-Catalunya.jpg" width="100%"></div>
+                <div class="category"> 8° etapa </div>
+                <div class="heading"> FORMULA 1 GRAN PREMIO DE ESPAÑA 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1991
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:16.330 Max Verstappen (2023)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 6</span><br>2-4 de jun</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 class="titulocard">Gilles Villeneuve Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="Circuit Gilles-Villeneuve.jpg" width="100%"></div>
+                <div class="category"> 9° etapa </div>
+                <div class="heading"> FORMULA 1 GRAND PRIX DU CANADA 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1991
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:13.078 Valtteri Bottas (2019)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher e Hamilton 7</span><br>16-18 de jun</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">	Red Bull Ring (Austria)</h3>
+            <div class="card">
+                <div class="card-image"><img src="Red Bull Ring.jpg" width="100%"></div>
+                <div class="category"> 10° etapa </div>
+                <div class="heading"> FORMULA 1 GROSSER PREIS VON ÖSTERREICH 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1970
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:05.619 Carlos Sainz (2020)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Max Verstappen 4</span><br>30 jun - 2 jul</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 class="titulocard">Silverstone Circuit (Inglaterra)</h3>
+            <div class="card">
+                <div class="card-image"><img src="Silverstone Circuit.jpg" width="100%"></div>
+                <div class="category"> 11° etapa </div>
+                <div class="heading"> FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1950
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:27.097 Max Verstappen (2020)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Lewis Hamilton 8</span><br>7-9 de jul</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 class="titulocard">Hungaroring Sport RT</h3>
+            <div class="card">
+                <div class="card-image"><img src="Hungaroring.jpg" width="100%"></div>
+                <div class="category"> 12° etapa </div>
+                <div class="heading">FORMULA 1 HUNGARIAN GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1986
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:16.627 Lewis Hamilton (2020)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Lewis Hamilton 8</span><br>21-23 de jul</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Circuit de Spa-Francorchamps</h3>
+            <div class="card">
+                <div class="card-image"><img src="Circuit de Spa-Francorchamps.jpg" width="100%"></div>
+                <div class="category"> 13° etapa </div>
+                <div class="heading">FORMULA 1 BELGIAN GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1950
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:46.286 Valtteri Bottas (2018)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 6</span><br>28-30 de jul</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Zandvoort Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="Belgica.jpg" width="100%"></div>
+                <div class="category"> 14° etapa </div>
+                <div class="heading">FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1950
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:11.097 Lewis Hamilton (2021)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Jim Clark 4</span><br>25-27 de ago</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 class="titulocard">Autodromo Nazionale di Monza - Parco Monza</h3>
+            <div class="card">
+                <div class="card-image"><img src="Circuit demonza.jpg" width="100%"></div>
+                <div class="category"> 15° etapa </div>
+                <div class="heading">FORMULA 1 GRAN PREMIO D'ITALIA 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1950
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        Rubens Barrichello (2004) 1:21.046</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 5</span><br>1-3 de set</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h3 class="titulocard">Marina Bay Street Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="singapura.jpg" width="100%"></div>
+                <div class="category"> 16° etapa </div>
+                <div class="heading">FORMULA 1 SINGAPORE AIR LINES GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2008
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        Kevin Magnussen (2018) 1:41.905</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Sebastian Vettel 5</span><br>15-17 de set</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Suzuka International Racing Course 7992 Ino-Cho</h3>
+            <div class="card">
+                <div class="card-image"><img src="japão.jpg" width="100%"></div>
+                <div class="category"> 17° etapa </div>
+                <div class="heading">FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1987
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:30.983 Lewis Hamilton (2019)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 6</span><br>22-24 de set</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Losail International Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="Losail International Circuit.jpg" width="100%"></div>
+                <div class="category"> 18° etapa </div>
+                <div class="heading">FORMULA 1 QATAR GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2021
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        0</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Lewis Hamilton e Verstappen 1</span><br>6-8 de out</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Circuito das Américas, Austin</h3>
+            <div class="card">
+                <div class="card-image"><img src="Circuit of the Americas.jpg" width="100%"></div>
+                <div class="category"> 19° etapa </div>
+                <div class="heading">FORMULA 1 QATAR GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2012
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        Charles Leclerc (2019) 1:36.169</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Lewis Hamilton 5</span><br>20-22 de out</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Autódromo Hermanos Rodriguez, México City</h3>
+            <div class="card">
+                <div class="card-image"><img src="mexico.jpg" width="100%"></div>
+                <div class="category"> 20° etapa </div>
+                <div class="heading">FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1963
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:17.774 Valtteri Bottas (2021)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Max Verstappen 5</span><br>29-27 de out</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Autódromo José Carlos Pace, Interlagos, São Paulo</h3>
+            <div class="card">
+                <div class="card-image"><img src="SP.jpg" width="100%"></div>
+                <div class="category"> 21° etapa </div>
+                <div class="heading">FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 1973
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:10.540 Valtteri Bottas (2018)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Michael Schumacher 4</span><br>3-5 de nov</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Las Vegas</h3>
+            <div class="card">
+                <div class="card-image"><img src="LV.jpg" width="100%"></div>
+                <div class="category"> 22° etapa </div>
+                <div class="heading">FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2022
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        n/a</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        n/a</span> <br>17-19 de nov</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="titulocard">Yas Marina Circuit</h3>
+            <div class="card">
+                <div class="card-image"><img src="Yas-Marina-Circuit.jpg" width="100%"></div>
+                <div class="category"> 23° etapa </div>
+                <div class="heading">FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023
+                    <div class="author"> Ano que entrou na Fórmula 1: <span class="name"> 2009
+                        </span></div>
+                    <div class="author">Record da pista: <span class="name">
+                        1:26.103 Max Verstappen (2021)</span></div>
+                    <div class="author">Maior Vencedor: <span class="name">
+                        Lewis Hamilton 5</span>24-26 de nov</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+</body>
+
+</html>

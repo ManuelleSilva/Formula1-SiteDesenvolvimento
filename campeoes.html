@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apaixonados por velocidade</title>
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-hover: #fc0b0b;
+            --cor-primaria: #ffffff;
+        }
+
+        .dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dp-menu ul {
+            background-color: var(--cor-fundo);
+        }
+
+        .dp-menu ul li {
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover {
+            background-color: var(--cor-hover);
+        }
+
+        .dp-menu ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul {
+            display: block;
+        }
+
+        .dp-menu ul ul {
+            width: 150px
+        }
+
+        .dp-menu ul ul li a {
+            display: block;
+        }
+
+
+        /* card dos campeões*/
+        .card {
+            width: 200px;
+            height: min-content;
+            transition: all .3s;
+            position: relative;
+            border-radius: .5rem 2rem;
+            box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .img {
+            transition: all .3s;
+            background: #ff0084;
+            background: -webkit-linear-gradient(to right, #33001b, #ff0084);
+            background: linear-gradient(to right, #33001b, #ff0084);
+            width: 100%;
+        }
+
+        .img:hover {
+            transform: scale(1.3);
+        }
+
+        .img-container {
+            display: grid;
+            border-radius: .5rem 2rem;
+            height: 270px;
+            overflow: hidden;
+        }
+
+        .description {
+            position: absolute;
+            bottom: .5rem;
+            left: .5rem;
+            text-align: start;
+            padding: .5rem 1em;
+            width: 90%;
+            transition: all 0.5s ease;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            backdrop-filter: blur(.1rem);
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: .5rem 2rem;
+        }
+
+        .description:hover {
+            transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+            box-shadow: none;
+        }
+
+        .title {
+            color: aliceblue;
+        }
+
+
+        .grid-container {
+            padding-left: 4%;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* Define 3 colunas */
+            gap: 4%;
+            /* Espaço entre os cards */
+        }
+    </style>
+</head>
+
+<body style="background-color:black;"></body>
+<header id="cabecalho">
+    <img src="f (1).png" height="85" width="250">
+</header>
+
+<nav class="dp-menu">
+    <ul>
+        <li><a href="Principal.html" target="main">Home</a></li>
+        <li><a href="Circuitos.html" target="main">Circuitos</a>
+            <ul>
+                <li><a href="Circuitos.html" target="main">Circuitos</a></li>
+                <li><a href="rua.html" target="main">Circuitos de rua</a></li>
+                <li><a href="pista.html" target="main">Circuitos de pista</a></li>
+            </ul>
+        </li>
+        <li><a href="Equipes.html" target="main">Equipes</a></li>
+        <li><a href="Pilotos.html" target="main">Pilotos</a>
+            <ul>
+                <li><a href="pilotos.html" target="main">pilotos</a></li>
+                <li><a href="Campeoes.html" target="main">Campeões de F1</a></li>
+            </ul>
+        </li>
+        <li><a href="arte.html" target="main">Arte & F1</a></li>
+        <li><a href="merchan.html" target="main">Filmes e séries</a></li>
+        <li><a href="moda.html" target="main">USE F1</a></li>
+    </ul>
+</nav>
+<section id="conteudo" style="color: #ffffff;">
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Giuseppe Farina.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Nino Farina<br>1950
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="juan manuel.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Juan manuel fangio<br>
+                        1951, 1954-1957
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Alberto Ascari _ SnapLap.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Alberto Ascari<br>1952-1953
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Mike Hawthorn _ SnapLap.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Mike Hawthorn<br>1958
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="bradham.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Jack Brabham<br>1959, 1960, 1966
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Phil Hill, World Champion 1961.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Phill hill<br>1961
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Graham hill.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Graham Hill<br>1962, 1968
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Jim Clark.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Jim Clark<br>1963, 1965
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="johnSurtees.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        John Surtees<br>1964
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Denny Hulme.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Denny Hulme<br>1967
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="stewart.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Jackie Stewart<br>1969, 1971, 1973
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="jochen.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Jochen rindt<br>1970
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Emerson Fittipaldi - Story 01.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Emerson Fittipaldi<br>1972, 1974
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Niki Lauda.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Niki Lauda<br>1975, 1977, 1984
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="James Hunt.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        James Hunt<br>1976
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Mario ANDRETTI.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Mario Andretti<br>1978
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Jody Scheckter.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Jody Scheckter<br>1979
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Alan Jones.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Alan Jones<br>1980
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="piquet.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Nelson Piquet<br>1981, 1983, 1987
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="keke.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Keke rosberg<br>1982
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Alain Prost.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Alain Prost<br>1985, 1986, 1989, 1993
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Senna.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Ayrton Senna<br>1988, 1990, 1991
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Nigel Mansell.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Nigel Mansell<br>1992
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Michael Schumacher.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Michael Schumacher<br>1994,1995, 2000-2004
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Damon Hill.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Damon Hill<br>1996
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Jacques Villeneuve _ SnapLap.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Jacques Villeneuve<br>1997
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Mika Hakkinen.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Mika Hakkinen<br>1998,1999
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Alonso.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Fernando Alonso<br>2005,2006
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Kimi Raikkonen.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Kimi Raikkonen<br>2007
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="lewis.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Lewis Hamilton<br>2008,2014,2015,2017-2020
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Jenson Button.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        jenson Button<br>2009
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="vettel.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Sebastian vettel<br>2010-2013
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="Nico.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Nico Rosberg<br>2016
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <div class="img"><img src="max.jpg" width="100%" height="100%">
+                </div>
+                <div class="description card">
+                    <span class="title">
+                        Max Verstappen<br>2021-2023
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+</body>
+
+
+
+</html>

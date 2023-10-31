@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apaixonados por velocidade</title>
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-hover: #fc0b0b;
+            --cor-primaria: #ffffff;
+        }
+
+        .dp-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dp-menu ul {
+            background-color: var(--cor-fundo);
+        }
+
+        .dp-menu ul li {
+            display: inline;
+            position: relative;
+        }
+
+        .dp-menu ul li a {
+            color: var(--cor-primaria);
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px;
+            transition: background .3s;
+        }
+
+        .dp-menu ul li a:hover {
+            background-color: var(--cor-hover);
+        }
+
+        .dp-menu ul ul {
+            display: none;
+            left: 0;
+            position: absolute;
+        }
+
+        .dp-menu ul li:hover ul {
+            display: block;
+        }
+
+        .dp-menu ul ul {
+            width: 150px
+        }
+
+        .dp-menu ul ul li a {
+            display: block;
+        }
+
+         /* estilizando a pagina*/
+
+         .titulo1{
+            color: var(--cor-hover);
+            font-size: 40px;
+         }
+         .texto{
+            font-size: 24px;
+         }
+
+         .titulo2{
+            font-size: 35px;
+            color: var(--cor-hover);
+            text-align: center;
+         }
+
+         .img{
+            padding-left: 25%;
+         }
+    </style>
+</head>
+
+<body style="background-color:black;"></body>
+<header id="cabecalho">
+    <img src="f (1).png" height="85" width="250">
+</header>
+
+<nav class="dp-menu">
+    <ul>
+        <li><a href="Principal.html" target="main">Home</a></li>
+        <li><a href="Circuitos.html" target="main">Circuitos</a>
+            <ul>
+                <li><a href="Circuitos.html" target="main">Circuitos</a></li>
+                <li><a href="rua.html" target="main">Circuitos de 2023</a></li>
+            </ul>
+        </li>
+        <li><a href="Equipes.html" target="main">Equipes</a></li>
+        <li><a href="Pilotos.html" target="main">Pilotos</a>
+            <ul>
+                <li><a href="pilotos.html" target="main">pilotos</a></li>
+                <li><a href="Campeoes.html" target="main">Campeões de F1</a></li>
+            </ul>
+        </li>
+        <li><a href="arte.html" target="main">Arte & F1</a></li>
+        <li><a href="merchan.html" target="main">Filmes e séries</a></li>
+        <li><a href="moda.html" target="main">USE F1</a></li>
+    </ul>
+</nav>
+<section id="conteudo" style="color: #ffffff;">
+    <h1 class="titulo1">Circuitos da Fórmula 1</h1>
+    <p class="texto">Em cerca de 60 anos, a F1 visitou mais de 60 circuitos por volta de 30 países. Desde 1984, o número de GP's
+        organizado em uma temporada foi limitada para 16 corridas, embora a FIA tenha permitido 17 corridas em 1995 e
+        atualmente 21 circuitos.
+        <br>
+        A FIA introduziu padrões de segurança, que coincidentemente, marcou o desaparecimento dos lendários circuitos de
+        Brands Hatch e Zandvdort. Na década de 2000 a FIA extinguiu o antigo e veloz traçado de Hockenheim, Alemanha,
+        deixando apenas o trecho conhecido como estádio.
+    </p>
+    <p class="texto">
+        Nos últimos anos, os países Árabes e asiáticos estão ganhando espaço na Fórmula 1 com modernos complexos e
+        luxuosos circuitos, porém travados, deixando para trás circuitos das Américas e vários outros circuitos
+        tradicionais da Europa. Apenas o circuito de Interlagos, no Brasil, ainda faz parte do calendário da categoria,
+        sem interrupções desde 1990 (fora alguns europeus).
+        <br>
+        Além do mais, circuitos tradicionais como os de Estoril, Portugal, Magny-Course, França, estão definitivamente
+        fora dos planos da Fórmula 1. Circuitos como da Alemanha, Espanha, Itália, Inglaterra e até mesmo do Brasil
+        ano-a-ano vem sendo ameaçados de serem excluídos da categoria, devido aos custos astronômicos exigidos pela F1.
+        <br>
+        Em 2023 a Fórmula 1 sediará 23 Grande Prêmios, iniciando na última semana de Março, no circuito do Bahrein por
+        causa da pandemia, e encerrando novamente em Abu Dhabi em Dezembro. Os destaques desta temporada seriam o
+        retorno do circuito de Qatar, e a estreia de Las Vegas, sendo portanto, três corridas nos Estados Unidos.
+    </p>
+
+    <h1 class="titulo2">Circuitos de 2023</h1>
+    <img src="transferir.jpg" width="50%" class="img">
+</section>
+</body>
+
+</html>
